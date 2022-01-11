@@ -17,7 +17,9 @@ body {
   margin-bottom: 2rem;
 }
 .playground > ul {
-  border: 1px solid #333;
+  border: 1px solid magenta;
+  width: 250px;
+  margin: 0 auto;
 }
 .playground > ul > li {
   width: 100%;
@@ -25,4 +27,9 @@ body {
 }
 .playground > ul > li > ul {
   display: flex;
+}
+.playground > ul > li > ul > li {
+  width: 25px;
+  height: 25px;
+  outline: 1px solid #ccc;
 }
