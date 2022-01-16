@@ -11,7 +11,7 @@ const GAME_COLS = 10
 
 
 let score = 0
-let duration = 500
+let duration = 420
 let downInterval
 let tempMovingItem
 
@@ -115,6 +115,19 @@ function checkMatch() {
       prependNewLine()
       score++
       scoreDisplay.innerText = score
+      if (score >= 5) {
+        duration = 350
+      } else if (score >= 10) {
+        duration = 280
+      } else if (score >= 15) {
+        duration = 210
+      } else if (score >= 20) {
+        duration = 140
+      } else if (score >= 25) {
+        duration = 70
+      } else if (score >= 30) {
+        duration = 25
+      }
     }
   })
 

@@ -10,6 +10,7 @@ ul {
 body {
   height: 100%;
   overflow: hidden;
+  background-color:rgb(246, 246, 246);
 }
 .game-text {
   display: flex;
@@ -25,6 +26,9 @@ body {
   color: white;
   font-size: 50px;
 }
+.game-text .game-explain {
+  margin: 2rem;
+}
 .game-text > button {
   padding: 0.5rem 1rem;
   color: #fff;
@@ -32,21 +36,33 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 10px;
+  font-size: 30px;
+  margin: 3rem;
 }
 .game-text > span {
     padding: 2rem;
     margin-bottom: 2rem;
 }
+.game-text > .empty-space {
+  padding: 100px;
+}
+.scoreSign {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 30px;
+}
 .score {
   text-align: center;
   font-size: 36px;
   margin-bottom: 2rem;
-  padding-top: 2rem;
+  padding-top: 0.5rem;
 }
 .playground > ul {
   border: 1px solid magenta;
   width: 250px;
   margin: 0 auto;
+  background-color: white;
 }
 .playground > ul > li {
   width: 100%;
